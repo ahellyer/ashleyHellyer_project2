@@ -8,6 +8,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $main-heading-font;
     margin: 0;
     padding: 0;
+    color: $charcoal;
 }
 
 h1 {
@@ -16,7 +17,7 @@ h1 {
 
 h2 {
     font-size: 3.2rem;
-    padding: 100px 0 75px 0;
+    padding: 80px 0 65px 0;
     text-align: center;
     font-weight: 800;
 }
@@ -31,10 +32,12 @@ h4 {
 
 h5 {
     font-size: 1.6rem;
+    text-transform: capitalize;
 }
 h6 {
     font-size: 1.2rem;
     text-align:center;
+    color: white;
 }
 
 p {
