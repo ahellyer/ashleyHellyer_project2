@@ -1,0 +1,17 @@
+// Colors:
+$red: #da331d;
+$yellow: #e5bf4b;
+$charcoal: #2a2a2a;
+
+// Font colors:
+$charcoal: #2a2a2a;
+$white: #ffffff;
+
+@mixin font-awesome($content){
+    font-family: "Font Awesome 5 Free";
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    content: $content;
+}
