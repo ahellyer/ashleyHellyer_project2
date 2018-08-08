@@ -35,7 +35,7 @@
     }
 
 // hamburger menu -----------------------
-
+// adapted from: https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793
 
 /* Screen reader only */
 .screen-reader {
@@ -66,10 +66,6 @@
   color: #c00;
 }
 
-/*
- Default styles + Mobile first
- Offscreen menu style
-*/
 .main-menu {
   position: absolute;
   left: -200px;
@@ -125,13 +121,6 @@
   top: 0;
 }
 
-/*
- On small devices, allow it to toggle...
-*/
-/*
- :target for non-JavaScript
- aria-expanded="true/false" will be for JavaScript
-*/
 .main-menu:target,
 .main-menu[aria-expanded="true"] {
   left: 0;
@@ -152,10 +141,6 @@
   z-index: 1000;
 }
 
-/* 
- We could us `.main-menu:target:after`, but
- it wouldn't be clickable.
-*/
 .main-menu:target + .backdrop,
 .main-menu[aria-expanded="true"] + .backdrop {
   position: absolute;
@@ -179,10 +164,6 @@
   }
 }
 
-/*
- Larger screen styling
- Horizontal menu
-*/
 @media (min-width: 768px) {
   .menu-toggle,
   .main-menu .menu-close {

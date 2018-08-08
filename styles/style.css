@@ -238,7 +238,8 @@ ul {
   text-decoration: none;
   padding: 15px;
   border-radius: 25px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  border: 2px solid transparent; }
   .button:hover {
     background: rgba(255, 255, 255, 0.8);
     border: #da331d 2px solid;
@@ -316,10 +317,6 @@ ul {
 .menu-toggle:focus {
   color: #c00; }
 
-/*
- Default styles + Mobile first
- Offscreen menu style
-*/
 .main-menu {
   position: absolute;
   left: -200px;
@@ -371,13 +368,6 @@ ul {
   right: 0;
   top: 0; }
 
-/*
- On small devices, allow it to toggle...
-*/
-/*
- :target for non-JavaScript
- aria-expanded="true/false" will be for JavaScript
-*/
 .main-menu:target,
 .main-menu[aria-expanded="true"] {
   left: 0;
@@ -395,10 +385,6 @@ ul {
   position: relative;
   z-index: 1000; }
 
-/* 
- We could us `.main-menu:target:after`, but
- it wouldn't be clickable.
-*/
 .main-menu:target + .backdrop,
 .main-menu[aria-expanded="true"] + .backdrop {
   position: absolute;
@@ -419,10 +405,6 @@ ul {
   .main-menu[aria-expanded="true"] + .backdrop {
     position: fixed; } }
 
-/*
- Larger screen styling
- Horizontal menu
-*/
 @media (min-width: 768px) {
   .menu-toggle,
   .main-menu .menu-close {
