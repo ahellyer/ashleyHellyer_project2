@@ -2,12 +2,12 @@
     .wrapper {
         width: 90%;
     }
-
+    //events figcaption:
     .gallery-cell__caption--extended {
-        padding-top: 20px;
+        padding: 5px 5px;
     }
     .gallery-cell__header--underline {
-        padding: 0;
+        padding-top: 0;
         font-size: 2.4rem;
     }
  
@@ -17,6 +17,7 @@
     .header {
         background-image: url(assets/image-1_medium.jpg);
     }
+    //about small photos
     .gallery-cell--padding-right {
     padding-right: 20px;
     }
@@ -28,13 +29,16 @@
 }
 
 @media (max-width: 850px) {
-    .nav__list {
-        display: none;
-    }
+    //removes main nav and resizes logo
     .nav {
         width: 40%;
         display: block;
     }
+    
+    .nav__list {
+        display: none;
+    }
+    
     .nav__logo {
         float: left;
         width: 60%;
@@ -58,12 +62,16 @@
     }
     .nav__logo--footer {
         display:none;
-}
+    }
+    .back-to-top {
+        display: block;
+    }
    
 }
 
 @media (max-width: 780px) {
-     .gallery-container--half {
+    //makes 50% figures full width of screen 
+    .gallery-container--half {
         padding:0;
         flex: 1 0 100%;
     }
@@ -95,13 +103,14 @@
     .gallery-cell--padding-all {
         margin: 20px;
     }
+    //reorders images/text in services section
     .gallery-cell--flex-order {
         order: 1;
     }
     .gallery-cell--flex-order-last {
         order: 2;
     }
-
+    //displays figcaption below images in events section
     .gallery-cell__caption--extended {
         position: static;
         display: block;
