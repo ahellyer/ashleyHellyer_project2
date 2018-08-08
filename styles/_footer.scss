@@ -1,0 +1,175 @@
+// --------------------- footer section ----------------
+.footer {
+    background: $charcoal;
+    color: white;
+    padding: 100px 0 20px 0; 
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+}
+
+// ----------------------contact info ---------------------
+
+.contact {
+    flex: 1 0 33%;
+}
+
+.contact__header {
+    padding-bottom: 40px;
+    color: white;
+}
+
+.contact__list {
+    list-style-type: none;
+    line-height: 2;
+    font-size: 1.4rem;
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+.contact__list-item__icon {
+    padding-right: 5px;
+}
+
+// .newsletter {
+//     position: relative;
+// }
+.newletter__input {
+    background: $charcoal;
+    border: white 0.5px solid;
+    color: white;
+    width: 100%;
+    padding: 5px 0 5px 5px;
+}
+
+.newsletter__container {
+    position: relative;
+    width: 60%;
+    padding: 0;
+}
+
+.newsletter__submit {
+    border: none;
+    background: $charcoal;
+    position: absolute;
+    top: 5px;
+    left: 185px;
+}
+
+.newsletter__submit__icon {
+    color: white;
+    position: absolute;
+    right: 5%;
+    top:20%;
+}
+
+// --------------------- about us -----------------------
+
+.footer-paragraph {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 33%;
+    text-align: left;
+    color: white;
+}
+
+.footer-paragraph__header {
+    padding-bottom: 40px;
+    color: white;
+}
+
+.footer-paragraph__p {
+    font-size: 1.4rem;
+    padding-right: 50px;
+    line-height: 1.8;
+}
+
+.footer-paragraph__p {
+    color: white;
+}
+
+// --------------------- instagram --------------------
+.gallery-cell--margin {
+    margin: 10px;
+}
+
+.instagram {
+    flex: 1 0 33%;
+    flex-wrap: wrap 
+}
+
+.instagram__header {
+    padding-bottom: 40px;
+    color: white;
+}
+
+.instagram-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.instagram-container__cell {
+    flex: 1 0 calc(25% - 10px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    // margin-bottom: 10px;
+}
+
+.instagram-container__img {
+    width: 100%;
+}
+
+// ----------------footer nav ---------------------
+.nav--footer {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+}
+
+.nav__logo--footer {
+    align-self: center;
+}
+
+.nav__list--footer {
+    flex: 1 0 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+}
+
+.nav__item--footer {
+    padding: 10px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+// ------------------ social icons-----------------------
+
+.socialIcons {
+    position: fixed;
+    top: 40%;
+    right: 0;  
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-container__icon {
+    color: $lightgrey;
+    font-size: 2rem;
+    width: 30px;
+    padding: 30px 0;
+}

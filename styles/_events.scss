@@ -1,0 +1,42 @@
+// -------------------events section----------------
+.gallery-cell--thirds {
+    flex: 1 0 33%;
+}
+
+.gallery-cell--fourths {
+    flex: 1 0 25%;
+}
+
+.gallery-cell__caption--extended {
+    position: absolute;
+    text-align: center;
+    color: white;
+    background: rgba(42, 42, 42, 0.7);
+    display: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 40px 30px;
+}
+
+.gallery-cell--thirds:hover .gallery-cell__caption--extended{
+        display: block;
+    }
+
+.gallery-cell__header--underline {
+    border-bottom: 1px solid white;
+    padding-bottom: 15px;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+
+.gallery-cell__p {
+    padding-top: 15px;
+    font-size: 1.6rem;
+}
+
+.gallery-cell__p--white {
+    color: white;
+}

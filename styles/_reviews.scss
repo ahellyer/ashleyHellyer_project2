@@ -1,0 +1,47 @@
+// ------------reviews section---------------------------
+
+.reviews {
+    background: $charcoal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     padding-bottom: 100px;
+}
+
+.reviews__figure-container{
+    position: relative;
+}
+
+.reviews__icon {
+    color:lightgrey;
+    position: absolute;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.reviews__icon--left {
+    left: -50px;
+}
+
+.reviews__p {
+    color: white;
+    width: 45%;
+    text-align: center;
+    font-size: 1.8rem;
+    padding-top: 50px;
+    color: $lightgrey;
+}
+
+.reviews__icon--right {
+    right: -50px;
+}
+
+.reviews__p--italic {
+    font-style: italic;
+    padding-top: 20px;
+}
+
+.section-header--white {
+    color: white;
+}

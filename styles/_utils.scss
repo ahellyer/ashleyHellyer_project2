@@ -16,3 +16,17 @@ $lightgrey: #d2cfcf;
     text-decoration: inherit;
     content: $content;
 }
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+}

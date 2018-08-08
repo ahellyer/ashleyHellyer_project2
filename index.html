@@ -12,28 +12,60 @@
     <title>Restaurant</title>
 </head>
 <body>
-    <header class="header">
-        <div class="wrapper">
-            <nav class="nav main-nav">
+    <header class="header" id="home">
+        <div class="wrapper clearfix">
+            <nav class="nav main-nav ">
                 <h2 class="nav__logo">Restaurant</h2>
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="" class="nav__link">Home</a>
+                        <a href="#home" class="nav__link">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a href="" class="nav__link">Menu</a>
+                        <a href="#menu" class="nav__link">Menu</a>
                     </li>
                     <li class="nav__item">
-                        <a href="" class="nav__link">Blog</a>
+                        <a href="#blog" class="nav__link">Blog</a>
                     </li>
                     <li class="nav__item">
-                        <a href="" class="nav__link">Contact</a>
+                        <a href="#contact" class="nav__link">Contact</a>
                     </li>
                     <li class="nav__item">
-                        <a href="" class="nav__link">About Us</a>
+                        <a href="#about" class="nav__link">About Us</a>
                     </li>
                 </ul>
             </nav>
+            <div class="mobile-nav clearfix">
+                <a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu"
+                    aria-label="Open main menu">
+                    <span class="screen-reader">Open main menu</span>
+                    <span class="fa fa-bars" aria-hidden="true"></span>
+                </a>            
+                <nav id="main-menu" class="main-menu" role="navigation" aria-expanded="false" aria-label="Main menu">
+                    <a href="#main-menu-toggle" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu"
+                        aria-label="Close main menu">
+                        <span class="screen-reader">Close main menu</span>
+                        <span class="fa fa-close" aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#menu">Menu</a>
+                        </li>
+                        <li>
+                            <a href="#blog">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#about">About Us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+            </div>
             <div class="title">
                 <h1 class="title__h1">Welcome</h1>
                 <h3 class="title__h3">to my restaurant website</h3>
@@ -41,31 +73,31 @@
             </div>
         </div>
     </header>
-    <section class="about">
+    <section class="about" id="about">
         <h2>we are...</h2>
         <div class="wrapper about-container">
             <div class="gallery-container gallery-container--half">
                 <figure class="gallery-cell gallery-cell--half gallery-cell--padding-right">
                     <img class="gallery-cell__img gallery-cell__img--smaller-width"src="styles/assets/image-2.jpeg" alt="overhead shot of breakfast plate">
-                    <figcaption class="gallery-cell__caption">
+                    <figcaption class="gallery-cell__caption gallery-cell__caption--overlay">
                         <h3 class="gallery-cell__header">local</h3>
                     </figcaption>
                 </figure>
                 <figure class="gallery-cell gallery-cell--half gallery-cell--padding-left">
                     <img class="gallery-cell__img gallery-cell__img--smaller-width" src="styles/assets/image-3.jpeg" alt="mixing bowl with flour and cinnamon">
-                    <figcaption class="gallery-cell__caption">
+                    <figcaption class="gallery-cell__caption gallery-cell__caption--overlay">
                         <h3 class="gallery-cell__header">modern</h3>
                     </figcaption>
                 </figure>
                 <figure class="gallery-cell gallery-cell--half gallery-cell--padding-right ">
                     <img class="gallery-cell__img gallery-cell__img--smaller-width" src="styles/assets/image-4.jpeg" alt="woman in toque smiling">
-                    <figcaption class="gallery-cell__caption">
+                    <figcaption class="gallery-cell__caption gallery-cell__caption--overlay">
                         <h3 class="gallery-cell__header">friendly</h3>
                     </figcaption>
                 </figure>
                 <figure class="gallery-cell gallery-cell--half gallery-cell--padding-left">
                     <img class="gallery-cell__img gallery-cell__img--smaller-width" src="styles/assets/image-5.jpeg" alt="plate of pancakes and berries">
-                    <figcaption class="gallery-cell__caption">
+                    <figcaption class="gallery-cell__caption gallery-cell__caption--overlay">
                         <h3 class="gallery-cell__header">delicious</h3>
                     </figcaption>
                 </figure>
@@ -77,7 +109,7 @@
             </div>
         </div>
     </section>
-    <section class="welcome">
+    <section class="welcome" id="menu">
         <div class="wrapper">
             <div class="info-paragraph">
                 <h2 class="info-paragraph__heading">welome to the restaurant</h2>
@@ -90,18 +122,18 @@
         <h2>services</h2>
         <div class="wrapper">
             <div class="gallery-container">
-                <div class="info-paragraph info-paragraph--half">
+                <div class="info-paragraph info-paragraph--half gallery-cell--flex-order">
                     <h3 class="info-paragraph__heading">custom catering</h3>
                     <p class="info-paragraph__p info-paragraph__p--small info-paragraph__p--extra-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore odio magnam recusandae porro est? Perspiciatis earum
                         reprehenderit reiciend?</p>
                 </div>
-                <figure class="gallery-cell gallery-cell--half">
+                <figure class="gallery-cell gallery-cell--half gallery-cell--padding-all gallery-cell--flex-order">
                     <img src="styles/assets/image-6.jpeg" alt="">
                 </figure>
-                <figure class="gallery-cell gallery-cell--half">
+                <figure class="gallery-cell gallery-cell--half gallery-cell--padding-all gallery-cell--flex-order-last">
                     <img src="styles/assets/image-7.jpeg" alt="">
                 </figure>
-                <div class="info-paragraph info-paragraph--half">
+                <div class="info-paragraph info-paragraph--half gallery-cell--flex-order">
                     <h3 class="info-paragraph__heading">event bookings</h3>
                     <p class="info-paragraph__p info-paragraph__p--small info-paragraph__p--extra-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore odio magnam recusandae porro est? Perspiciatis earum
                         reprehenderit reiciend?</p>
@@ -178,7 +210,7 @@
             </div>
         </div>
     </section>
-    <section class="blog">
+    <section class="blog" id="blog">
         <h2>our blog</h2>
         <div class="wrapper">
             <div class="gallery-container gallery-container--blog">
@@ -213,7 +245,7 @@
             <i class="fab fa-pinterest-p icon-container__icon"></i>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="wrapper footer-container">
             <div class="contact">
                 <h3 class="contact__header">contact</h3>
@@ -226,9 +258,11 @@
                         <i class="fas fa-map-marker-alt contact__list-item__icon"></i>Toronto, Ontario</li>
                 </ul>
                 <form class="newsletter" action="">
-                    <label class="visuallyhidden" for="email">enter your email</label>
-                    <input class="newletter__input" type="email" name="email" id="email" placeholder="your email">
-                    <button class="newsletter__submit" ><i class="fas fa-paper-plane newsletter__submit__icon"></i></button>
+                    <fieldset class="newsletter__container">
+                        <label class="visuallyhidden" for="email">enter your email</label>
+                        <input class="newletter__input" type="email" name="email" id="email" placeholder="your email">
+                        <i class="fas fa-paper-plane newsletter__submit__icon"></i>
+                    </fieldset>
                 </form>
             </div>
             <div class="footer-paragraph">

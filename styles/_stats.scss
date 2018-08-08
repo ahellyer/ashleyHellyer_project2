@@ -1,0 +1,26 @@
+// -------------------stats section ---------------------
+
+.stats {
+    background: $yellow;
+    padding: 100px 0;
+}
+
+.gallery-container--stats {
+    justify-content: space-around;
+}
+
+.stats__icon-container {
+    flex: 1 0 25%;
+    text-align: center;
+}
+
+.stats__icons {
+    font-size: 4rem;
+    color: $charcoal;
+    padding-bottom: 20px;
+}
+
+.stats__p {
+    font-size: 2rem;
+    padding-top: 10px;
+}
