@@ -200,7 +200,8 @@ ul {
 .header {
   background-image: url(assets/image-1.jpeg);
   height: 110vh;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 .title {
   color: white;
@@ -405,7 +406,7 @@ ul {
   .main-menu[aria-expanded="true"] + .backdrop {
     position: fixed; } }
 
-@media (min-width: 768px) {
+@media (min-width: 850px) {
   .menu-toggle,
   .main-menu .menu-close {
     display: none; } }
@@ -937,7 +938,9 @@ ul {
     display: none; }
   .footer-container {
     width: 80%;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .socialIcons {
+    display: none; } }
 
 @media (max-width: 650px) {
   .info-paragraph--half {
